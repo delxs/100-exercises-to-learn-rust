@@ -10,6 +10,10 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
+fn factorial(nums:u32) -> u32 {
+    (2..=nums).fold(1, |acc, x| acc * x)
+}
+
 #[cfg(test)]
 mod tests {
     use crate::factorial;
